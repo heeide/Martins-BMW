@@ -26,3 +26,15 @@ function randombuddy(){
 function createtask(active){
     
 }
+
+function addToInventory (item){ //Sjekker om inventory har item, hvis ikke pushes det til inventory, må kalles fra et sted da.
+    
+    if(!inventory.includes(item)){
+ 
+     if (items.includes(item)) {
+     inventory.push(item)
+     updateview()
+     }
+ } 
+ 
+ }
