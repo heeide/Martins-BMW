@@ -9,6 +9,10 @@ function updateView(responseText, className) {
     ${displayInventory()}
     
     `;
+    //Coolnessbar
+    <div id="coolnessBar">
+        <div id="barProgress"></div>
+    </div> 
 }
 
 function updateView(){
@@ -30,4 +34,14 @@ function displayInventory(){ //Viser inventory i en liste som bygges etterhvert 
     html += '</ul>'
     return html;
 
+}
+
+function showCoolnessBar() {
+    if (coolnessmeter < 0) {
+        coolnessmeter = 0;
+    }
+    else if (coolnessmeter >= 1000) {
+        coolnessmeter = 1000;
+        winScreen();
+    }
 }

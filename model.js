@@ -2,6 +2,8 @@
 const hilsener = ["Vink", "Tommel opp", "Håndtrykk"];
 let riktigHilsen = Math.floor(Math.random() * 3);
 let carCoolness = Math.floor(Math.random() * 11);
+let coolnessmeter = 0;      //coolnessmeter variabelen som oppdateres
+let coolnessBarPercent;     //brukes til å regne ut % for å oppdatere coolness baren
 
 // objekter
 
